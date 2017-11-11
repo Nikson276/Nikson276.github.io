@@ -37,10 +37,10 @@
 						<p>Верстка на HTML и CSS <br>Разработка сайтов под ключ</p>
 					</div>
 				</div>
-				<a class="main-down" href="#"><i class="icon-down"></i></a>
+				<a class="main-down slowly" href="#portfolio"><i class="icon-down"></i></a>
 			</div> 
 
-			<div class="portfolio">
+			<div class="portfolio" id="portfolio">
 				<div class="container">
 					<h2 class="section-header">Портфолио</h2>
 					<div class="row">
@@ -123,5 +123,22 @@
     		});
     	});
     </script>
+	<script>
+		// навигация главный скроллинг к якорю
+		$(".slowly").on("click", function(event) {
+			// отменяем стандартную обработку нажатия по ссылки
+			event.preventDefault();
+			
+			// Забираем идентификатор бока с атрибута href
+			var id = $(this).attr('href'),
+			
+			// узнаем высоту от начала страницы до блока на который ссылается якорь
+				top = $(id).offset().top;
+				
+			//анимируем переход на расстояние - top за 1500мс
+			$('body,html').animate({scrollTop: top}, 1500);
+			
+		});
+	</script>
   </body>
 </html>
