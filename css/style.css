@@ -32,8 +32,8 @@ html{font-size:10px;}
 .example h2{color:#fff; font-weight:800;font-size:4rem;}
 .example a{color:#fff;font-weight:900;font-size:2rem;border:solid 2px #fff;}
 .example a:hover{color:#000;}
-.in_work{position:relative;display:table;width:50%;text-align:center;color:#fff;height:100px;}
-.in_work img{position:relative; left:40rem; width:100%;max-width:1200px;box-shadow:0px 4px 29px 0px rgba(87, 92, 97, 0.54);opacity:0.8;}
+.in_work{position:relative;display:table;width:100%;text-align:center;color:#fff;height:100px;}
+.in_work img{position:relative;width:100%;max-width:780px;box-shadow:0px 4px 29px 0px rgba(87, 92, 97, 0.54);opacity:0.8;}
 @media (min-width:0px) and (max-width:767px){html{font-size:7px;}
 .footer strong{margin:3rem 0 2rem;display:inline-block;}
 .social-links a{font-size:1.5rem;}
